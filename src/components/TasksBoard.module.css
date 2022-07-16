@@ -1,0 +1,192 @@
+.wrapper {
+  width: 46rem;
+
+  margin: -1.75rem auto 0;
+  padding:0 1rem;
+}
+
+.createTask {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+
+  margin-bottom: 4rem;
+}
+
+.createTask > input {
+  width: 100%;
+  
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 0.5rem;
+
+  padding: 1rem;
+
+  color: var(--gray-100);
+  line-height: 1.4;
+}
+
+.createTask > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 1rem;
+
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--blue-dark);
+
+  color: var(--gray-100);
+  font-weight: 700;
+  font-size: .875rem;
+  line-height: 1.4;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.tasks > strong {
+  margin-right: 0.5rem;
+
+  color: var(--blue);
+  font-size: .875rem;
+  line-height: 1.0625rem;
+}
+
+.tasks > span {
+  color: var(--gray-200);
+  font-weight: 700;
+  font-size: .75rem;
+  line-height: .9375rem;
+
+  background: var(--gray-400);
+  border-radius: 99rem;
+
+  padding: .125rem .5rem;
+}
+
+.concluded > strong {
+  margin-right: 0.5rem;
+
+  color: var(--purple);
+  font-size: .875rem;
+  line-height: 1.0625rem;
+}
+
+.concluded > span {
+  color: var(--gray-200);
+  font-weight: 700;
+  font-size: .75rem;
+  line-height: .9375rem;
+
+  background: var(--gray-400);
+  border-radius: 99rem;
+
+  padding: .125rem .5rem;
+}
+
+.clipBoard {
+  border-radius: 0.5rem;
+  border-top: 1px solid var(--gray-400);
+}
+
+.clipBoard ul {
+  list-style-type: none;
+}
+
+.emptyClipboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emptyClipboard > img {
+  margin: 4rem auto 1rem;
+}
+
+.emptyClipboard strong {
+  color: var(--gray-300);
+  line-height: 1.4;
+}
+
+.emptyClipboard p {
+  color: var(--gray-300);
+  line-height: 1.4;
+}
+
+/* --- TASKS -------------------------------- */
+
+.wrapperTask {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: .75rem;
+
+  padding: 1rem;
+
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: .5rem;
+}
+
+.wrapperTask + .wrapperTask {
+  margin-top: .75rem;
+}
+
+.checkbox {
+  position: relative;
+}
+
+.checkbox > input {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0;
+}
+
+.checkmark {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  cursor: pointer;
+  background: none;
+  border: none;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.wrapperTask > p {
+  width: 100%;
+  font-size: .875rem;
+  line-height: 1.4;
+  color: var(--gray-100);
+  text-align: left;
+}
+
+.wrapperTask > .checked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.wrapperTask > button:last-child {
+  background: none;
+  border: none;
+  color: var(--gray-300);
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.wrapperTask > button:last-child:hover {
+  color: var(--danger);
+} 
+
